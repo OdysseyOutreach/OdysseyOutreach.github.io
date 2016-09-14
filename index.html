@@ -5,7 +5,7 @@ layout: default
 <div class="container-fluid text-xs-center">
 
   <div class="row">
-    <div class="col-md-6 offset-md-1">
+    <div class="col-md-6">
       Intro Video
     </div>
     <div class="col-md-4">
@@ -14,8 +14,20 @@ layout: default
   </div>
 
   <div class="row">
-    <div class="col-md-6 offset-md-1">
-      News Feed
+    <div class="col-md-6">
+      <h1>News and Updates</h1>
+
+      <ul class="list-unstyled">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
     <div class="col-md-4">
       Contact Us
