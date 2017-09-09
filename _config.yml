@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Odyssey Outreach
 email: team@odysseyoutreach.xyz
-description: > Helping support computer science education in Charlotte high schools
+description: "Helping support computer science education in Charlotte high schools"
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://odysseyoutreach.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 
